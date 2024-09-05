@@ -1,0 +1,19 @@
+/vendor/
+.DS_Store
+
+writable/cache/*
+!writable/cache/index.html
+writable/logs/*.log
+writable/session/*
+!writable/session/index.html
+writable/debugbar/*
+
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
