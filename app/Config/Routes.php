@@ -22,6 +22,7 @@ $routes->get('service/software', 'Home::software');
 // Admin Pages
 $routes->group('admin', function($routes) {
     $routes->get('/', 'ManageLogin::index');
+    $routes->post('login', 'ManageLogin::login');
     $routes->get('faqs', 'ManageHome::faqs');
     $routes->get('comments', 'ManageHome::comments');
     $routes->get('articles', 'ManageHome::articles');

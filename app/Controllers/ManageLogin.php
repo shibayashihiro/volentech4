@@ -44,7 +44,6 @@ class ManageLogin extends Controller {
                           ->limit(1)
                           ->get()
                           ->getRowArray();
-
 		if ($result == null) {
 			return redirect()->to('admin'); // Use redirect()->to() in CI4
 		}

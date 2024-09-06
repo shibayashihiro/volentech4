@@ -55,7 +55,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN LOGIN -->
         <div class="content">
             <!-- BEGIN LOGIN FORM -->
-            <form class="login-form" action="<?php echo base_url('ManageLogin/login');?>" method="post">
+            <form class="login-form" action="<?php echo base_url('admin/login');?>" method="post">
                 <h3 class="form-title">Login to your account</h3>
                 <div class="alert alert-danger display-hide">
                     <button class="close" data-close="alert"></button>

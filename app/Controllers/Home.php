@@ -4,6 +4,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use Config\Database;
 use App\Libraries\Googlemaps;
+use CodeIgniter\Email\Email;
 class Home extends Controller {
 
 	/**
@@ -147,8 +148,8 @@ class Home extends Controller {
     // }
 	public function sendEmail()
     {
-        // Load email library
-        $email = \Config\Services::email();
+        // Load the email library
+        $email = new Email();
 
         $name = $this->request->getPost('name');
         $phone = $this->request->getPost('phone');
@@ -158,7 +159,7 @@ class Home extends Controller {
 
         $config = [
             'protocol' => 'smtp',
-            'SMTPHost' => 'ssl://smtp.googlemail.com',
+            'SMTPHost' => 'smtp.googlemail.com',
             'SMTPPort' => 465,
             'SMTPUser' => 'yugansh@volentech.com',
             'SMTPPass' => 'Yuggu1992!',
